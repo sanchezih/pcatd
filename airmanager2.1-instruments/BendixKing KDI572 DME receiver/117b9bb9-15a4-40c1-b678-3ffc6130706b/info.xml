@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<pluginstrument>
+    <aircraft>Generic</aircraft>
+    <author>Sim Innovations</author>
+    <compatibleFSX>true</compatibleFSX>
+    <compatibleP3D>true</compatibleP3D>
+    <compatibleXPL>true</compatibleXPL>
+    <configVersion>1</configVersion>
+    <description>Shows distance, speed and time according to DME. Use the switch to select nav 1 or nav 2.</description>
+    <pluginInterfaceVersion>100</pluginInterfaceVersion>
+    <prefHeight>244</prefHeight>
+    <prefWidth>600</prefWidth>
+    <type>Bendix/King KDI572 DME receiver</type>
+    <uuid>117b9bb9-15a4-40c1-b678-3ffc6130706b</uuid>
+    <version>131</version>
+</pluginstrument>
