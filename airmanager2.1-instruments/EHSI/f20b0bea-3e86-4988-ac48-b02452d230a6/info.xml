@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<pluginstrument>
+    <aircraft>Generic</aircraft>
+    <author>Snake Stack</author>
+    <compatibleFSX>false</compatibleFSX>
+    <compatibleP3D>false</compatibleP3D>
+    <compatibleXPL>true</compatibleXPL>
+    <configVersion>1</configVersion>
+    <description></description>
+    <pluginInterfaceVersion>100</pluginInterfaceVersion>
+    <prefHeight>600</prefHeight>
+    <prefWidth>600</prefWidth>
+    <type>EFIS-84 EHSI</type>
+    <uuid>f20b0bea-3e86-4988-ac48-b02452d230a6</uuid>
+    <version>1</version>
+</pluginstrument>
