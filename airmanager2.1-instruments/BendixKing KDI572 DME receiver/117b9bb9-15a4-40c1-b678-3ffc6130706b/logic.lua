@@ -5,6 +5,8 @@ local gbl_dist1  = 0
 local gbl_speed1 = 0
 local gbl_dist2  = 0
 local gbl_speed2 = 0
+local dme_slave_source = 0
+local dme_power = 0
 
 -- Button functions --
 function new_state(state, direction)
@@ -39,8 +41,25 @@ group_text = group_add(txt_naut, txt_nm, txt_nav1, txt_nav2, txt_knots, txt_kt, 
 -- Functions --
 function update_gui()
 
+	
+	if dme_power == 0 then
+		selected = 0
+		switch_set_state(switch_state, 0)
+	else
+		if dme_slave_source == 0 then
+			selected = 1
+			switch_set_state(switch_state, 1)
+		else
+			selected = 2
+			switch_set_state(switch_state, 2)
+		end
+	end
+	
+
     -- Get the state of the power switch
-    selected = persist_get(persist_power)
+ --  selected = persist_get(persist_power)
+	
+	
     
     -- Turn DME and off (make text visible and invisible)
     visible(group_text, gbl_power and selected > 0)
@@ -108,16 +127,18 @@ function update_gui()
 
 end
 
-function new_data_xpl(dist1, speed1, dist2, speed2, avionics, battery, generator, enginerunning)
+function new_data_xpl(dist1, speed1, dist2, speed2, avionics, battery, generator, enginerunning, dmeslavesource, dmepower)
 
     -- Do we have power?
-    gbl_power = fif((battery == 1 or (generator[1] == 1 and enginerunning[1] == 1) or (generator[2] == 1 and enginerunning[2] == 1)) and avionics == 1, true, false)
+    gbl_power = fif((battery == 1 or (generator[1] == 1 and enginerunning[1] == 1) or (generator[2] == 1 and enginerunning[2] == 1)) and avionics == 1 and dmepower == 1, true, false)
     
     -- Make everything global
     gbl_dist1  = dist1
     gbl_speed1 = speed1
     gbl_dist2  = dist2
     gbl_speed2 = speed2
+	dme_slave_source = dmeslavesource
+	dme_power = dmepower
     
     update_gui()
 
@@ -150,7 +171,9 @@ xpl_dataref_subscribe("sim/cockpit/radios/nav1_dme_dist_m", "FLOAT",
                       "sim/cockpit/electrical/avionics_on", "INT",
                       "sim/cockpit/electrical/battery_on", "INT", 
                       "sim/cockpit2/electrical/generator_on", "INT[8]", 
-                      "sim/flightmodel/engine/ENGN_running", "INT[8]", new_data_xpl)
+                      "sim/flightmodel/engine/ENGN_running", "INT[8]", 
+					  "sim/cockpit2/radios/actuators/DME_slave_source", "INT",
+					  "sim/cockpit2/radios/actuators/dme_power", "INT", new_data_xpl)
 fsx_variable_subscribe("NAV DME:1", "nautical mile",
 					   "NAV DMESPEED:1", "Knots",
                        "NAV DME:2", "nautical mile",
