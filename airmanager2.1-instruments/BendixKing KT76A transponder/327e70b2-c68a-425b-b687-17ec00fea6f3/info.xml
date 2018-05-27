@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<pluginstrument>
+    <aircraft>Generic</aircraft>
+    <author>Sim Innovations</author>
+    <compatibleFSX>true</compatibleFSX>
+    <compatibleP3D>true</compatibleP3D>
+    <compatibleXPL>true</compatibleXPL>
+    <configVersion>1</configVersion>
+    <description>Classic transponder with rotary buttons to set transponder code. Push the ident light to squawk ident.
+FSX: Selecting mode and squawking ident not possible.</description>
+    <pluginInterfaceVersion>100</pluginInterfaceVersion>
+    <prefHeight>183</prefHeight>
+    <prefWidth>700</prefWidth>
+    <type>Bendix/King KT76A transponder</type>
+    <uuid>327e70b2-c68a-425b-b687-17ec00fea6f3</uuid>
+    <version>110</version>
+</pluginstrument>
