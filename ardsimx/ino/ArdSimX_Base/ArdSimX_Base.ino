@@ -13,7 +13,7 @@
 
 //------------------------------------------
 void setup()  {
-  BoardNumber 2;            // -- Assign Board Number here  (0...9)
+  BoardNumber 3;            // -- Assign Board Number here  (0...9)
 }
 
 //------------------------------------------
