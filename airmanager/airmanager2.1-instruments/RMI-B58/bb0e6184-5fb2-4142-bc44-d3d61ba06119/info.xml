@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<pluginstrument>
+    <aircraft>Baron B58</aircraft>
+    <author>macnfly</author>
+    <compatibleFSX>true</compatibleFSX>
+    <compatibleP3D>true</compatibleP3D>
+    <compatibleXPL>true</compatibleXPL>
+    <configVersion>1</configVersion>
+    <description>RMI showing the bearing for ADF1 (blue) and VOR2 (green).
+
+Not a specific Baron B58 instrument, but fits the Baron Panel set layout
+
+@screen size 1440 x 900 for a full screen panel, the geometry can be set to:
+(x, y, w, h)  160, 320, 320, 320</description>
+    <pluginInterfaceVersion>100</pluginInterfaceVersion>
+    <prefHeight>512</prefHeight>
+    <prefWidth>512</prefWidth>
+    <type>RMI</type>
+    <uuid>bb0e6184-5fb2-4142-bc44-d3d61ba06119</uuid>
+    <version>102</version>
+</pluginstrument>
