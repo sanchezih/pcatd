@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<pluginstrument>
+    <aircraft>Generic</aircraft>
+    <author>Sim Innovations</author>
+    <compatibleFSX>false</compatibleFSX>
+    <compatibleP3D>false</compatibleP3D>
+    <compatibleXPL>true</compatibleXPL>
+    <configVersion>1</configVersion>
+    <description>Works with the Airfoil Labs Cessna 172SP</description>
+    <pluginInterfaceVersion>100</pluginInterfaceVersion>
+    <prefHeight>182</prefHeight>
+    <prefWidth>700</prefWidth>
+    <type>Bendix/King KAP 140 Autopilot System</type>
+    <uuid>a1fc01a3-1e69-40b4-a53d-6a7e274cee9a</uuid>
+    <version>102</version>
+</pluginstrument>
