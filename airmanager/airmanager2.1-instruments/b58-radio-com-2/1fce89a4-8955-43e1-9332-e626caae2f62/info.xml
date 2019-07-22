@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<pluginstrument>
+    <aircraft>Baron B58</aircraft>
+    <author>macnfly</author>
+    <compatibleFSX>true</compatibleFSX>
+    <compatibleP3D>true</compatibleP3D>
+    <compatibleXPL>true</compatibleXPL>
+    <configVersion>1</configVersion>
+    <description>Radio displaying the active COn and NAV frequenzy
+
+Not a specific Baron B58 instrument, but fits the Baron Panel set layout
+
+@screen size 1440 x 900 for a full screen panel, the geometry can be set to:
+(x, y, w, h)  480, 800, 320, 100 </description>
+    <pluginInterfaceVersion>100</pluginInterfaceVersion>
+    <prefHeight>160</prefHeight>
+    <prefWidth>512</prefWidth>
+    <type>Com Nav Radio</type>
+    <uuid>1fce89a4-8955-43e1-9332-e626caae2f62</uuid>
+    <version>110</version>
+</pluginstrument>
