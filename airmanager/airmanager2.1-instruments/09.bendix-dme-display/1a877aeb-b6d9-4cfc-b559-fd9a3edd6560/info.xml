@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<pluginstrument>
+    <aircraft>Generic</aircraft>
+    <author>Sim Innovations</author>
+    <compatibleFSX>true</compatibleFSX>
+    <compatibleP3D>true</compatibleP3D>
+    <compatibleXPL>true</compatibleXPL>
+    <configVersion>1</configVersion>
+    <description></description>
+    <pluginInterfaceVersion>100</pluginInterfaceVersion>
+    <prefHeight>106</prefHeight>
+    <prefWidth>700</prefWidth>
+    <type>Bendix/King KN DME display</type>
+    <uuid>1a877aeb-b6d9-4cfc-b559-fd9a3edd6560</uuid>
+    <version>101</version>
+</pluginstrument>
